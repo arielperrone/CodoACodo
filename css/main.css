@@ -1,0 +1,42 @@
+body {
+    background-color: aliceblue;
+    margin: 2px;
+    padding: 2px;
+    border: solid red 2px;
+}
+
+header {
+    background-color: rgb(207, 240, 240);
+    padding: 8px;
+}
+nav {
+    margin: 10px;
+}
+
+ul {
+    box-shadow: grey 2px 3px 5px;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    margin: 10px;
+    align-items: left;
+    border-color: rgb(8, 10, 10);
+}
+
+main {
+    background-color: burlywood;
+    padding: 5px;
+}
+
+section {
+
+margin: 10px 2px;
+}
+
+
+span {
+    margin: 3px;
+    padding: 3px;
+}
