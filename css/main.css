@@ -1,22 +1,36 @@
+/* Por Etiquetas */
 body {
     background-color: aliceblue;
     margin: 2px;
     padding: 2px;
     border: solid red 2px;
 }
-
 header {
     background-color: rgb(207, 240, 240);
     padding: 8px;
 }
+main {
+    background-color: burlywood;
+    padding: 5px;
+    
+}
+section {
+    margin: 10px 2px;
+    width: 60%;
+    display: inline-block;
+}
+aside {
+    width: 30%;
+    display: inline-block;
+}
 nav {
+    display: flex-row;
+    flex-direction: left;
     margin: 10px;
 }
-
 ul {
     box-shadow: grey 2px 3px 5px;
 }
-
 li {
     list-style: none;
     display: inline;
@@ -24,19 +38,18 @@ li {
     align-items: left;
     border-color: rgb(8, 10, 10);
 }
-
-main {
-    background-color: burlywood;
-    padding: 5px;
-}
-
-section {
-
-margin: 10px 2px;
-}
-
-
 span {
     margin: 3px;
     padding: 3px;
 }
+a {
+    color:red;
+    box-shadow:blanchedalmond 3px 2px 15px;
+    text-decoration-line: none;
+}
+
+/* ------------------------------------------------------------ */
+/* Por clasess */
+
+/* ------------------------------------------------------------ */
+/* Por identificadores */
