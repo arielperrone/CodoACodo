@@ -7,6 +7,7 @@ console.log(myH2);
 // VARIABLES -----------------------------------------
 // traer los datos del usuario desde el DOM
 const input_usuario = document.querySelector('#input-usuario-html')
+let cantidad = parseInt(input_usuario.value)
 let botonUsuario = document.querySelector('#boton-enviar')
 botonUsuario.addEventListener('click',starter);
 
@@ -27,16 +28,16 @@ function presentarVideo(a){
 
 // Para presentar la lista de videos
 function presentarLista(a,b){
-    let cantidad = parseInt(b)
     for(i=0; i <= cantidad;i++){
+        var nuevoFrame = a[i];
         let li = document.createElement('li');
-        li.textContent = a[i];
+        li.htmlContent = nuevoFrame;
         ul_mostrar.appendChild(li)
     }
 }
 
 function starter(){
     presentarVideo(videos);
-    presentarLista(videos,input_usuario)
+    presentarLista(videos,cantidad)
 }
 
