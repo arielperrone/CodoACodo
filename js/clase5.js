@@ -18,18 +18,24 @@ class button
 { 
     constructor(nombre,frase)
     {
-    this.nombre = nombre,
-    this.frase = frase,
-    function mostrar (nombre,frase)
-    {
-        let btn = document.getElementById("btn");
-        btn.innerHTML("<button onclik='alert(`${frase})'>`${name}</button>")
+        this.nombre = nombre,
+        this.frase = frase
     }
-
-    }
+    mostrar ()
+        {
+            var myHTML = `<button onclick="miBoton.mostrarAlert()" > ${this.nombre}</button>`;
+            return myHTML
+        }
+    mostrarAlert()
+        {
+            return alert(this.frase)
+        }
+        
 }
+    
+const myApp = document.getElementById("myApp");
 const miBoton = new button("apretame","me apretaste");
-miBoton.mostrar
+myApp.innerHTML = miBoton.mostrar()
 
 class array {
     constructor(elemento){
