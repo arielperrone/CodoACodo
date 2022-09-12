@@ -3,7 +3,6 @@ body {
     background-color: aliceblue;
     margin: 2px;
     padding: 2px;
-    border: solid red 2px;
 }
 header {
     background-color: rgb(207, 240, 240);
@@ -43,13 +42,21 @@ span {
     padding: 3px;
 }
 a {
-    color:red;
-    box-shadow:blanchedalmond 3px 2px 15px;
+    color:rgb(87, 86, 86);
     text-decoration-line: none;
 }
 
+a:hover {
+    color: black;
+}
+
+iframe {
+    display: inherit;
+    width: 500px;
+    margin: 20px;
+}
 /* ------------------------------------------------------------ */
 /* Por clasess */
-
+/* a las clases se las comio bootstrap*/
 /* ------------------------------------------------------------ */
 /* Por identificadores */

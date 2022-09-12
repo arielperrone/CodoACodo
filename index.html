@@ -15,20 +15,28 @@
     <title>Codo a codo - React</title>
 </head>
 <body>
-    <header>
+    <header class="container">
         <h1>Codo a Codo React</h1>
-        <nav>
-            <ol>
-                <span>nav bar obviusly</span>
-                <li><a href="#" class="link_nav" id="home_link">Home</a></li>
-                <li><a href="" class="link_nav" id="aboutme_link">about me</a></li>
-                <li><a href="./subpaginas/contact.html" class="link_nav" id="contact_link">contact</a></li>
-                <li><a href="" class="link_nav" id="blog_link">Entrada al Blog de la clase</a></li> <!-- Esto se agrego a partir de la clase 4-->
-            </ol>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <span>NAV BAR OBVIUSLY</span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Casita</a>
+                  <a class="nav-link" href="./subpaginas/contact.html">Acerca de yo</a>
+                  <a class="nav-link" href="#">Entrada al blog de la clase</a>
+                  <a class="nav-link" href="">Mis MDs</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main>
-        <section>
+    <main class="container">
+        <section class="row"></section>
+        <section >
             <article>
                 <h2></h2>
                 <p></p>
@@ -57,7 +65,7 @@
             <article>
                 <h2>Quinta clase,</h2>
                 <p></p>
-                <a href="../CodoACodo-1/subpaginas/quintaclase.html"></a>
+                <a href="/subpaginas/quintaclase.html">Quinta Clase</a>
             </article>
             <article>
                 <h2>Cuarta clase, enlazando Javascript</h2>
