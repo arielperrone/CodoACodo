@@ -1,5 +1,5 @@
-export default class video {
-    constructor(url,width,height, css_class)
+export default class Video {
+    constructor(url,width,height,css_class)
     {
         this.url = url;
         this.width = width;
@@ -8,8 +8,8 @@ export default class video {
     }
     render ()
     {
-        let myHTML = `<video class=${this.css_class}>
-                    <source src=${this.url} type="video/mp4>
+        let myHTML = `<video width=${this.width} height=${this.height} class=${this.css_class} controls>
+                    <source src=${this.url} type="video/mp4 >
                     </video>`;
         return myHTML;
     }

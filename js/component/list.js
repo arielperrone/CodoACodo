@@ -1,24 +1,19 @@
-import Button from  "../component/buttons"
-
 export default class List {
-    constructor (){
-        this.myList = []; // Lista vacia
+    constructor (array)
+    {
+        this.myList = array;
     }
-    render(){
-        let myList = "<ul>";
-        // escribir el for que recorra los elementos de la lista
-        for (let index = 0; index < this.myList.length; index++) {
-            const element = array[index];
-            
-        myList += "<li>" 
-        let myButton = new Button("este es mi boton: " )
-        myList += myButton.render
-
-        myList += "</li>" 
-
-       }
-
-        myList += "</ul>";
-        return myList
+    render()
+    {
+        let myHTML = "<ul></ul>"
+        let ul = document.createElement("ul");
+        let li = document.createElement("li");
+        for (let index = 0; index < this.myList.length; index++)
+        {            
+            li = this.myList[index];
+            myHTML += myHTML.innerHTML(li)
+        }
+        
+        return myHTML
     }
 }
